@@ -8,7 +8,7 @@
 body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
-  background: url(./../../imgs/bg-desktop.svg) center/cover no-repeat #674baf;
+  background: url(../imgs/bg-desktop.svg) center/cover no-repeat #674baf;
 }
 body h1, body p {
   margin-block-start: 0;
