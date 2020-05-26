@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background: url(./../../imgs/bg-desktop.svg) center/cover no-repeat $violet;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+    h1, p{
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+}
