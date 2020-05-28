@@ -1,6 +1,38 @@
-//font for Heading
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-//font-family: 'Poppins', sans-serif;
+//mixin for text
+@mixin styleText($fontSize, $fontWeight, $color){
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+}
 
+//mixin button
+@mixin styleBtn($color, $bgColor,$py, $px, $shadowColor,$borderColor,$borderRadius){
+    color: $color;
+    background-color: $bgColor;
+    padding: $py $px;
+    box-shadow: 0 2px 20px $shadowColor;
+    border: 1px solid $borderColor;
+    border-radius: $borderRadius;
+    -webkit-border-radius:$borderRadius;
+    -moz-border-radius:$borderRadius;
+    -ms-border-radius:$borderRadius;
+    -o-border-radius:$borderRadius;
+}
 
+//breakpoints
+@mixin extraSmall{
+   @media (min-width: $extraSmall){
+       @content;
+   }
+}
+@mixin small{
+    @media (min-width: $small){
+        @content;
+    }
+ }
+ @mixin medium{
+    @media (min-width: $medium){
+        @content;
+    }
+ }
 
