@@ -6,10 +6,9 @@
 }
 
 //mixin button
-@mixin styleBtn($color, $bgColor,$py, $px, $shadowColor,$borderColor,$borderRadius){
+@mixin styleBtn($color, $bgColor, $shadowColor,$borderColor,$borderRadius){
     color: $color;
     background-color: $bgColor;
-    padding: $py $px;
     box-shadow: 0 2px 20px $shadowColor;
     border: 1px solid $borderColor;
     border-radius: $borderRadius;

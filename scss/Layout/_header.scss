@@ -2,7 +2,7 @@
 @include extraSmall {
   .header__logo {
     img {
-      padding: 1.5rem 0 0 2rem;
+      padding: 2.5rem 0 0 2rem;
       width: 10rem;
     }
   }
@@ -11,22 +11,15 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    .header__img {
+    text-align: center;
       img {
         max-width: 100%;
         height: auto;
         margin: 4rem 0;
       }
-    }
     .header__details {
       width: 95%;
       margin: 0 auto;
-      position: relative;
-      h1,
-      p,
-      .btn {
-        text-align: center;
-      }
       h1 {
         @include styleText(1.2rem, 600, $white);
         font-family: "Poppins", sans-serif;
@@ -34,15 +27,65 @@
       p {
         @include styleText(0.8rem, 300, $white);
         line-height: 1.3rem;
-        margin: 1.3rem 0;
+        margin-top: 1.3rem;
       }
       .btn {
-        @include styleBtn($violet, $white, 0.5rem, 0, #333, $white, 30px);
-        min-width: 70%;
+        @include styleBtn($violet, $white, #333, $white, 30px);
+        font-weight: bold;
         display: inline-block;
         text-decoration: none;
-        position: absolute;
-        left: 15%;
+        padding: 0.7em 3.5em;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@include small {
+  .header__logo {
+    img {
+      width: 12rem;
+    }
+  }
+  .header__container {
+    .header__details {
+      h1 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 1.05rem;
+        line-height: 1.5rem;
+      }
+      .btn {
+        padding: 0.7em 4.5em;
+      }
+    }
+  }
+}
+
+@include medium {
+  .header__logo {
+    img {
+      width: 20rem;
+      padding: 3rem 0 5rem 3rem;
+    }
+  }
+  .header__container {
+    width: 90%;
+    flex-direction: row;
+    text-align: left;
+   img {
+      max-width: 55%;
+     margin: 0;
+    }
+    .header__details {
+    margin: 2.5rem 0 0 3rem; 
+    
+      h1 {
+        @include styleText(2.5rem, 600, $white);
+      }
+      p {
+        font-size: 1.1rem;
       }
     }
   }

@@ -12,7 +12,8 @@ body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
 }
-body h1, body p {
+body h1,
+body p {
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -21,10 +22,15 @@ body h1, body p {
     background: url(../imgs/bg-mobile.svg) center/cover no-repeat #674baf;
   }
 }
+@media (min-width: 768px) {
+  body {
+    background: url(../imgs/bg-desktop.svg) center/cover no-repeat #674baf;
+  }
+}
 
 @media (min-width: 320px) {
   .header__logo img {
-    padding: 1.5rem 0 0 2rem;
+    padding: 2.5rem 0 0 2rem;
     width: 10rem;
   }
 
@@ -33,8 +39,9 @@ body h1, body p {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
-  .header__container .header__img img {
+  .header__container img {
     max-width: 100%;
     height: auto;
     margin: 4rem 0;
@@ -42,12 +49,6 @@ body h1, body p {
   .header__container .header__details {
     width: 95%;
     margin: 0 auto;
-    position: relative;
-  }
-  .header__container .header__details h1,
-.header__container .header__details p,
-.header__container .header__details .btn {
-    text-align: center;
   }
   .header__container .header__details h1 {
     font-size: 1.2rem;
@@ -60,12 +61,11 @@ body h1, body p {
     font-weight: 300;
     color: #fff;
     line-height: 1.3rem;
-    margin: 1.3rem 0;
+    margin-top: 1.3rem;
   }
   .header__container .header__details .btn {
     color: #674baf;
     background-color: #fff;
-    padding: 0.5rem 0;
     box-shadow: 0 2px 20px #333;
     border: 1px solid #fff;
     border-radius: 30px;
@@ -73,34 +73,82 @@ body h1, body p {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    min-width: 70%;
+    font-weight: bold;
     display: inline-block;
     text-decoration: none;
-    position: absolute;
-    left: 15%;
+    padding: 0.7em 3.5em;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 414px) {
+  .header__logo img {
+    width: 12rem;
+  }
+
+  .header__container .header__details h1 {
+    font-size: 1.7rem;
+  }
+  .header__container .header__details p {
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+  }
+  .header__container .header__details .btn {
+    padding: 0.7em 4.5em;
+  }
+}
+@media (min-width: 768px) {
+  .header__logo img {
+    width: 20rem;
+    padding: 3rem 0 5rem 3rem;
+  }
+
+  .header__container {
+    width: 90%;
+    flex-direction: row;
+    text-align: left;
+  }
+  .header__container img {
+    max-width: 55%;
+    margin: 0;
+  }
+  .header__container .header__details {
+    margin: 2.5rem 0 0 3rem;
+  }
+  .header__container .header__details h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  .header__container .header__details p {
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 320px) {
   footer .social__icons {
-    text-align: center;
-    margin: 7rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 3rem 0;
   }
-  footer .social__icons i {
-    width: 35px;
-    height: 35px;
+  footer .social__icons li {
+    list-style: none;
+    margin: 0 5px;
+  }
+  footer .social__icons li a {
+    text-decoration: none;
+  }
+  footer .social__icons li a i {
+    width: 30px;
+    height: 30px;
     color: #fff;
     border: 1px solid #fff;
     text-align: center;
-    padding: 10px;
+    line-height: 30px;
     border: 1px solid #fff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-  }
-  footer .social__icons i:nth-child(2) {
-    margin: 0 0.7rem;
   }
   footer .attribute {
     width: 90%;
@@ -109,6 +157,29 @@ body h1, body p {
     font-size: 0.7rem;
     font-weight: 400;
     color: #fff;
+  }
+}
+@media (min-width: 414px) {
+  footer .attribute {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  footer .social__icons {
+    justify-content: flex-end;
+    margin: 0;
+    padding-right: 5rem;
+  }
+  footer .social__icons li {
+    margin: 0 8px;
+  }
+  footer .social__icons li a i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  footer .attribute {
+    margin-top: 4rem;
   }
 }
 
