@@ -12,11 +12,11 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-      img {
-        max-width: 100%;
-        height: auto;
-        margin: 4rem 0;
-      }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 4rem 0;
+    }
     .header__details {
       width: 95%;
       margin: 0 auto;
@@ -74,13 +74,13 @@
     width: 90%;
     flex-direction: row;
     text-align: left;
-   img {
+    img {
       max-width: 55%;
-     margin: 0;
+      margin: 0;
     }
     .header__details {
-    margin: 2.5rem 0 0 3rem; 
-    
+      margin: 2.5rem 0 0 3rem;
+
       h1 {
         @include styleText(2.5rem, 600, $white);
       }
