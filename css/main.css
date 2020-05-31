@@ -80,16 +80,16 @@ body p {
     margin-top: 2rem;
   }
 }
-@media (min-width: 414px) {
+@media (min-width: 375px) {
   .header__logo img {
     width: 12rem;
   }
 
   .header__container .header__details h1 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .header__container .header__details p {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     line-height: 1.5rem;
   }
   .header__container .header__details .btn {
@@ -159,9 +159,9 @@ body p {
     color: #fff;
   }
 }
-@media (min-width: 414px) {
+@media (min-width: 375px) {
   footer .attribute {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 768px) {
