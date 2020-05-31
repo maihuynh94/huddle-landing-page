@@ -122,6 +122,9 @@ body p {
   .header__container .header__details p {
     font-size: 1.1rem;
   }
+  .header__container .header__details .btn {
+    padding: 1em 4.5em;
+  }
 }
 @media (min-width: 320px) {
   footer .social__icons {
